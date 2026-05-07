@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #031c30;
+    position: relative;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.titulo {
+    color: #0e8d94;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: sans-serif;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.calculadora {
+    background-color: #394240;
+    padding: 15px;
+    border-radius: 10px 1px 10px 1px;
+}
+
+#pantalla {
+    width: 100%;
+    background-color: #111;
+    color: #cec7b6;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.btn-num, .btn-op, .btn-igual, .btn-decimal{
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px 1px;
+}
+
+.btn-num {
+    background-color: #939473;
+    color: #222;
+}
+
+.btn-op {
+    background-color: #353626;
+    color: #ccc;
+}
+
+.btn-op-C {
+    padding: 14px;
+    font-size: 28px;
+    cursor: pointer;
+    border: none;
+    border-radius: 9px 1px;
+    background-color: #400;
+    color: #a00;
+}
+
+.btn-igual {
+    background-color: #353626;
+    color: #ccc;
+    grid-column: span 4;
+}
+
+.btn-decimal {
+    background-color: #939473;
+    color: #222;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #051525;
+    padding: 10px;
+    text-align: center;
+    color: #067;
+    font-size: 12px;
+}
