@@ -32,7 +32,7 @@ body {
 .calculadora {
     background-color: #394240;
     padding: 15px;
-    border-radius: 10px 1px 10px 1px;
+    border-radius: 10px;
 }
 
 #pantalla {
